@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component,Output,EventEmitter } from '@angular/core';
 import { PhotosserviceService } from 'app/services/photosservice.service';
 import { Photo } from 'app/model/Photo';
 import { PhotoItemComponent } from 'app/photo-item/photo-item.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-photo-item-container',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, RouterModule, PhotoItemComponent],
   templateUrl: './photo-item-container.component.html',
   styleUrl: './photo-item-container.component.css'
 })
@@ -16,7 +19,9 @@ export class PhotoItemContainerComponent
 
   constructor(private photoService : PhotosserviceService)
   {
-    this.photos = this.photoService.getPhotos();
+    this.photoService.getPhotos().subscribe(resp=>{
+      this.photos=resp;
+    });
   }
 
   hidePhoto(ph:Photo)

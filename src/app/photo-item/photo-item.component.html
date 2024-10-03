@@ -1,14 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src={{photo.src}} width="200" height="200"class="rounded float-left" />
+      <ul class="list-group">
+        <li class="list-group-item">id: {{ photo.id }}</li>
+        <li class="list-group-item">name: {{ photo.name }}</li>
+        <li class="list-group-item">style : {{ photo.style }}</li>
+        <li class="list-group-item">size : {{ photo.size }}</li>
+        <li class="list-group-item">fileType : {{ photo.fileType }}</li>
+        <li class="list-group-item">vote :{{ photo.vote }}</li>
+      </ul>
 
-<div>
-    <ul>
-        <li>id: {{ photo.id }}</li>
-        <li>name: {{ photo.name }}</li>
-        <li>style : {{photo.style}}</li>
-        <li>size : {{ photo.size}}</li>
-        <li>fileType : {{photo.fileType}} </li>
-    </ul>  
-    <p>vote :{{photo.vote}}</p>
-    <button (click)="upvote(photo)">Upvote</button>
-    <button (click)="downvote(photo)">Downvote</button>
-    <button (click)="hide(photo)">hide</button>
+      <button class="btn btn-primary" (click)="upvote(photo)">Upvote</button>
+      <button class="btn btn-danger" (click)="downvote(photo)">Downvote</button>
+      <button class="btn btn-secondary" (click)="hide(photo)">hide</button>
+    </div>
+  </div>
 </div>

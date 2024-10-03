@@ -6,8 +6,9 @@ export class Photo{
     size : number;
     fileType : string;
     vote : number;
+    src : string;
 
-    constructor(id:number, name:string, style:string, size:number, fileType:string, vote:number)
+    constructor(id:number, name:string, style:string, size:number, fileType:string, vote:number, src:string)
     {
         this.id=id;
         this.name=name;
@@ -15,6 +16,7 @@ export class Photo{
         this.size=size;
         this.fileType=fileType;
         this.vote=vote;
+        this.src = src;
     }
 
 }

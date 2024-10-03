@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Photo } from 'app/model/Photo';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -8,19 +10,13 @@ export class PhotosserviceService {
 
   photos : Photo [] = [];
 
-  constructor() 
+  constructor(private http:HttpClient) 
   { 
 
   }
 
-  getPhotos() : Photo[]
+  getPhotos() : Observable<Photo[]>
   {
-    const photo =new Photo(1,"summer","wildlife",20,"jpeg",1);
-    const photo1 =new Photo(1,"summer","wildlife",20,"jpeg",1);
-    const photo2 =new Photo(1,"summer","wildlife",20,"jpeg",1);
-    const photo3 =new Photo(1,"summer","wildlife",20,"jpeg",1);
-    this.photos = [photo, photo1,photo2,photo3];
-
-    return this.photos;
+    return this.http.get<Photo[]>("https://my-json-server.typicode.com/HARSH-VYAS/PhotosApp/photos");
   }
 }

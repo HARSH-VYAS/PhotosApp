@@ -17,11 +17,10 @@ export class PhotoItemComponent implements OnInit {
 
   constructor(private photoService : PhotosserviceService)
   {
-    this.photo= new Photo(1,"summer","wildlife",20,"jpeg",1);
+    this.photo= new Photo(1,"summer","wildlife",20,"jpeg",1,"../../assets/animal.jpeg");
   }
 
   ngOnInit(): void {
-    this.photo = this.photoService.getPhotos()[0];
   }
 
   upvote(photo:Photo):void

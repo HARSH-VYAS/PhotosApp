@@ -1,4 +1,12 @@
-
-<app-photo-item *ngFor="let ph  of photos" [photo]="ph" (hidePhoto)="hidePhoto($event)"> 
-
-</app-photo-item>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <app-photo-item
+        *ngFor="let ph of photos"
+        [photo]="ph"
+        (hidePhoto)="hidePhoto($event)"
+      >
+      </app-photo-item>
+    </div>
+  </div>
+</div>
