@@ -1,0 +1,14 @@
+
+<div>
+    <ul>
+        <li>id: {{ photo.id }}</li>
+        <li>name: {{ photo.name }}</li>
+        <li>style : {{photo.style}}</li>
+        <li>size : {{ photo.size}}</li>
+        <li>fileType : {{photo.fileType}} </li>
+    </ul>  
+    <p>vote :{{photo.vote}}</p>
+    <button (click)="upvote(photo)">Upvote</button>
+    <button (click)="downvote(photo)">Downvote</button>
+    <button (click)="hide(photo)">hide</button>
+</div>
