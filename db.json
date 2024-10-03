@@ -14,7 +14,7 @@
         "name": "winter",
         "style": "family",
         "size": 50,
-        "fileType": "png",
+        "fileType": "jpg",
         "vote": 1,
         "src": "../../assets/winter.jpg"
       },
@@ -32,16 +32,16 @@
         "name": "rainy",
         "style": "animal",
         "size": 100,
-        "fileType": "jpeg",
+        "fileType": "png",
         "vote": 1,
-        "src": "../../assets/icelandwaterfall.jpg"
+        "src": "../../assets/icelandwaterfall.png"
       },
       {
         "id": 5,
         "name": "hot",
         "style": "beach",
         "size": 200,
-        "fileType": "jpeg",
+        "fileType": "jpg",
         "vote": 1,
         "src": "../../assets/laptop.jpg"
       }
