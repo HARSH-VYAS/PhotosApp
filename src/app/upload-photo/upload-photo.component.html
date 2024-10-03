@@ -1,0 +1,58 @@
+<div class="container">
+<form (ngSubmit)="submitForm()">
+ 
+    <legend>Upload a photo here</legend>
+    <div class="mb-3">
+      <label for="Name" class="form-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        value="Enter name here"
+        [(ngModel)]="name"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="Name" class="form-label">Style</label>
+      <input
+        type="text"
+        name="name"
+        value="Enter name here"
+        [(ngModel)]="style"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="Name" class="form-label">Size</label>
+      <input
+        type="text"
+        name="name"
+        value="Enter name here"
+        [(ngModel)]="size"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="Name" class="form-label">File Type</label>
+      <input
+        type="text"
+        name="name"
+        value="Enter name here"
+        [(ngModel)]="fileType"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="Name" class="form-label">Src</label>
+      <input
+        type="text"
+        name="name"
+        value="Enter name here"
+        [(ngModel)]="src"
+      />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Submit" />
+
+</form>
+
+</div>
