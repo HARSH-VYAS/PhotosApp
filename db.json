@@ -1,0 +1,44 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "name": "summer",
+      "style": "wildlife",
+      "size": 20,
+      "fileType": "jpeg",
+      "vote": 1
+    },
+    {
+        "id": 2,
+        "name": "winter",
+        "style": "family",
+        "size": 50,
+        "fileType": "png",
+        "vote": 1
+      },
+      {
+        "id": 3,
+        "name": "spring",
+        "style": "wedding",
+        "size": 90,
+        "fileType": "jpg",
+        "vote": 1
+      },
+      {
+        "id": 4,
+        "name": "rainy",
+        "style": "animal",
+        "size": 100,
+        "fileType": "jpeg",
+        "vote": 1
+      },
+      {
+        "id": 5,
+        "name": "hot",
+        "style": "beach",
+        "size": 200,
+        "fileType": "jpeg",
+        "vote": 1
+      }
+  ]
+}
